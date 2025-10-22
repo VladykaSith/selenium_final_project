@@ -17,4 +17,5 @@ def test_user_can_add_item_into_cart(browser,link):
     page.add_item_into_cart()
     page.check_title()
     page.check_price()
+    page.should_not_be_success_message()
 
